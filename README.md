@@ -2,104 +2,178 @@
 
 **University Project | Faculty of Electrical Engineering, University of Sarajevo | 2025/2026**
 
-A university project focused on **Software Quality Assurance (QA)** and **Software Verification and Validation (V&V)**, combining code inspection, unit testing, test-driven development, white-box and black-box testing, test automation, API testing, and software quality evaluation.
+A comprehensive university project focused on Software Quality Assurance (QA), Software Verification and Validation (V&V), covering software testing methodologies, code inspection, test automation, software quality metrics, and performance evaluation.
+
+The project combines practical experience in white-box and black-box testing, including unit testing, test-driven development (TDD), code coverage analysis, UI automation, API testing, and performance testing.
 
 ## Project Overview
 
-This repository contains work completed for the **Software Verification and Validation (VVS)** course at the Faculty of Electrical Engineering, University of Sarajevo (Computing and Informatics).
+The project was completed as part of the Software Verification and Validation (VVS) course at the Faculty of Electrical Engineering, University of Sarajevo, Department of Computing and Informatics.
 
-The project is organized into three parts:
+It consists of three main parts:
 
 1. **Code Inspection, Unit Testing & Test-Driven Development**
-2. **White-Box Testing & Software Quality Analysis**
-3. **Black-Box Testing, Automation, API & Performance Testing**
+2. **White-Box Testing, Code Coverage & Software Quality Analysis**
+3. **Black-Box Testing, Test Automation, API & Performance Testing**
+
+---
 
 ## Part 1: Code Inspection, Unit Testing & TDD
 
-**Application:** ForBooks — a C#/.NET book management application.
+**Application:** ForBooks – C#/.NET book management application
 
-- Inspected source code to identify potential defects and quality issues.
-- Documented inspection findings.
-- Designed and implemented unit and data-driven tests with **MSTest**.
-- Used fake database implementations to isolate tested components.
-- Applied **Test-Driven Development (TDD)** to selected application functionality.
+This part focuses on identifying software defects, verifying application functionality, and implementing automated unit tests.
 
-**Source code:** [ForBooks](ForBooks/)
+### Activities
+
+- Performed static code inspection to identify potential defects and code quality issues.
+- Used inspection checklists and documented identified defects.
+- Designed and implemented unit tests using MSTest.
+- Created positive, negative, boundary-value, and data-driven test cases.
+- Used fake database implementations to isolate components during testing.
+- Applied Test-Driven Development (TDD) principles.
+- Implemented and tested functionality related to Wish Lists and View History.
+- Evaluated test results and code coverage.
+
+### Technologies
+
+`C#` ` .NET` `MSTest` `TDD` `Unit Testing`
 
 **Documentation:**
 - [Code Inspection](VVS_1dioprojekta/VVS-Inspekcija%20koda.pdf)
 - [Unit Testing](VVS_1dioprojekta/VVS-unit%20testiranje.pdf)
 - [Test-Driven Development](VVS_1dioprojekta/VVS-TDD.pdf)
 
+**Source code:** [ForBooks](ForBooks/)
+
+---
+
 ## Part 2: White-Box Testing & Software Quality Analysis
 
-**Focus:** Structural testing, coverage criteria, code metrics, refactoring, and performance comparison.
+**Focus:** Structural testing, code coverage, complexity analysis, refactoring, and performance optimization.
 
-- Analyzed the `ObrisiNeprimjereneRecenzije` method using white-box testing techniques.
-- Evaluated **cyclomatic complexity** and control-flow paths.
-- Designed test cases for statement, branch, condition, MC/DC, loop, and path coverage.
-- Reviewed maintainability and coupling metrics.
-- Applied refactoring and compared execution time and memory usage.
+This part focuses on analyzing and improving the `ObrisiNeprimjereneRecenzije` method within a C# application.
+
+### Activities
+
+- Analyzed source code using white-box testing techniques.
+- Calculated cyclomatic complexity using McCabe's metric.
+- Created control flow graphs and identified independent execution paths.
+- Designed test cases for:
+  - Statement coverage
+  - Branch coverage
+  - Condition coverage
+  - Modified Condition/Decision Coverage (MC/DC)
+  - Loop testing
+  - Path coverage
+- Analyzed code complexity, maintainability, and coupling.
+- Applied refactoring techniques to improve code readability and maintainability.
+- Optimized the implementation using techniques such as `HashSet` and `StringComparison.OrdinalIgnoreCase`.
+- Compared execution time and memory consumption before and after optimization.
+
+### Technologies & Techniques
+
+`C#` `White-Box Testing` `Code Coverage` `Cyclomatic Complexity` `Refactoring` `Performance Analysis`
 
 **Documentation:** [White-Box Testing & Software Quality Analysis](VVS_2dioprojekta_AmininDio.pdf)
 
+---
+
 ## Part 3: Black-Box Testing, Test Automation & Performance Testing
 
-**Focus:** Functional testing, UI automation, API validation, test management, and load testing.
+**Applications tested:** TurboSquid and Ogimil
 
-- Designed and executed black-box functional test cases.
-- Documented defects and managed testing activities with **Azure DevOps**.
-- Used **Selenium WebDriver** and the **Page Object Model (POM)** for UI automation.
-- Used **Postman** for API testing.
-- Used **Loadster** for load and performance testing.
+This part focuses on functional software testing, test management, automated UI testing, API validation, and performance testing.
+
+### Manual & Functional Testing
+
+- Designed and executed functional test cases using black-box testing techniques.
+- Tested application features including registration, login, search, filtering, and purchasing workflows.
+- Documented test cases, execution results, and identified defects.
+- Used Azure DevOps for test management and defect tracking.
+
+### UI Test Automation
+
+- Implemented automated UI tests using Selenium WebDriver and NUnit.
+- Applied the Page Object Model (POM) design pattern.
+- Automated user interactions and functional workflows.
+- Verified expected application behavior through automated assertions.
+
+### API Testing
+
+- Created and executed REST API tests using Postman.
+- Validated HTTP responses, status codes, and response data.
+- Used JavaScript assertions to verify API behavior.
+
+### Performance Testing
+
+- Used Loadster for performance and load testing.
+- Evaluated application behavior under simulated user load.
+
+### Technologies
+
+`Selenium WebDriver` `NUnit` `Page Object Model` `Postman` `JavaScript` `Azure DevOps` `Loadster`
 
 **Documentation:** [Black-Box Testing & Test Automation](VVS_3dioprojekta.pdf)
 
+---
+
 ## Technologies & Tools
 
-| Area | Tools and techniques |
-| --- | --- |
+| Category | Technologies / Tools |
+|---|---|
 | Programming | C#, JavaScript |
-| Unit testing | MSTest, NUnit |
-| UI automation | Selenium WebDriver, Page Object Model |
-| API testing | Postman |
-| Test management | Azure DevOps |
-| Performance testing | Loadster |
-| QA methodologies | Code inspection, TDD, black-box and white-box testing |
-| Quality analysis | Code coverage, cyclomatic complexity, refactoring |
-| Version control | Git, GitHub |
+| Unit Testing | MSTest, NUnit |
+| UI Automation | Selenium WebDriver, Page Object Model |
+| API Testing | Postman |
+| Test Management | Azure DevOps |
+| Performance Testing | Loadster |
+| Testing Methodologies | Black-Box, White-Box, TDD |
+| Quality Analysis | Code Coverage, Cyclomatic Complexity, Refactoring |
+| Version Control | Git, GitHub |
 
 ## Repository Structure
 
 ```text
 qa-software-verification-validation/
+│
 ├── ForBooks/
 │   ├── ForBooks/
 │   ├── Testovi/
 │   ├── DataFiles/
 │   └── README.md
+│
 ├── VVS_1dioprojekta/
 │   ├── VVS-Inspekcija koda.pdf
 │   ├── VVS-unit testiranje.pdf
 │   └── VVS-TDD.pdf
+│
 ├── VVS_2dioprojekta_AmininDio.pdf
+│
 ├── VVS_3dioprojekta.pdf
+│
 └── README.md
 ```
 
-## Skills Demonstrated
+## Key Learning Outcomes
 
-- Manual and automated test case design
-- Static inspection and defect identification
-- Unit testing and test-driven development
-- Code coverage and complexity analysis
-- UI and API test execution
-- Test management and defect tracking
-- Performance testing and code optimization
+Through this project, I gained practical experience in:
+
+- Designing and executing manual and automated test cases.
+- Identifying software defects through code inspection and functional testing.
+- Applying unit testing and TDD methodologies.
+- Measuring software quality using code coverage and complexity metrics.
+- Creating maintainable UI automation tests.
+- Validating REST APIs and application functionality.
+- Using test management and defect tracking tools.
+- Evaluating software performance and applying code optimizations.
 
 ---
 
-**Institution:** University of Sarajevo — Faculty of Electrical Engineering  
-**Department:** Computing and Informatics  
-**Course:** Software Verification and Validation (VVS)  
-**Academic year:** 2025/2026
+**Academic Year:** 2025/2026
+
+**Institution:** University of Sarajevo – Faculty of Electrical Engineering
+
+**Department:** Computing and Informatics
+
+**Course:** Software Verification and Validation (VVS)
